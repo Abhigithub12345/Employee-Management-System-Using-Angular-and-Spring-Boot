@@ -1,0 +1,30 @@
+.main {
+    margin: 20px;
+    border-radius: 20px;
+    background-color: #e18484;
+    text-align: center;
+}
+
+
+.Image404 {
+    width: 350px;
+    height: 350px;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+
+.error-details p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.error-actions {
+    padding-bottom: 20px;
+}
+
+.error-actions a {
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(95, 7, 196);
+    text-decoration: none;
+}

@@ -1,0 +1,35 @@
+<h2>Emp List</h2>
+<div class="table-responsive">
+    <table class="table table-striped">
+        <thead class="table-dark">
+            <tr>
+                <th>Id</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Salary</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let emp of employees">
+                <td><b>{{emp.id}}</b></td>
+                <td>{{emp.firstName}}</td>
+                <td>{{emp.lastName}}</td>
+                <td>{{emp.salary}}</td>
+                <td>
+                    <button class="btn btn-outline-success" (click)="updateEmp(emp.id)">
+                        <i class="fa fa-pencil" aria-hidden="true"></i>
+                    </button>
+
+                    <button class="btn btn-outline-danger" (click)="deleteEmp(emp.id)" style="margin-left: 20px;">
+                        <i class="fa fa-trash" aria-hidden="true"></i>
+                    </button>
+
+                    <button class="btn btn-outline-secondary" (click)="empDetails(emp.id)" style="margin-left: 20px;">
+                        <i class="fa fa-info-circle" aria-hidden="true"></i>
+                    </button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
